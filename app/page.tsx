@@ -30,13 +30,10 @@ export default function Home() {
   
   return (
     <main className="container mx-auto px-45">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          Najlepiej sprzedające się produkty
+      <div className="mb-8xw text-center">
+        <h1 className="text-3xl font-bold text-black mb-10">         
+        BESTSELLERY - sprawdź, na czym polega ich wyjątkowość
         </h1>
-        <p className="text-gray-600">
-          Odkryj nasze bestsellery tego miesiąca
-        </p>
       </div>
       
       <ProductList 
