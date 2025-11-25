@@ -10,7 +10,6 @@ export default function ButtonComponent({text, quantity}: buttonComponentInterfa
         e.stopPropagation(); 
         
         if (!isDisabled) {
-            // Przekierowanie na stronę zamawiania
             router.push(`/order`); 
         }
     };

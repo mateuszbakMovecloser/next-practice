@@ -14,6 +14,7 @@ export const mockProducts: ProductInterface[] = [
     grams:20,
     tags: ["Promocja", "Nowość"],
     quantity: 100,
+    timeOfDay: ["day"],
   },
   {
     id: "2", 
@@ -28,6 +29,7 @@ export const mockProducts: ProductInterface[] = [
     grams: 30,
     tags: ["Promocja", "Nowość"],
     quantity: 0,
+    timeOfDay: [],
   },
   {
     id: "3",
@@ -42,6 +44,7 @@ export const mockProducts: ProductInterface[] = [
     grams: 30,
     tags: ["Promocja"],
     quantity: 100,
+    timeOfDay: ["night"],
   },
   {
     id: "4",
@@ -56,6 +59,7 @@ export const mockProducts: ProductInterface[] = [
     grams:20,
     tags: ["Nowość"],
     quantity: 100,
+    timeOfDay: []
   },
   {
     id: "5", 
@@ -70,6 +74,7 @@ export const mockProducts: ProductInterface[] = [
     grams:20,
     tags: [],
     quantity: 100,
+    timeOfDay: ["day","night"],
   }
 ];
     

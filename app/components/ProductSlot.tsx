@@ -4,6 +4,7 @@ import PriceComponent from "./PriceComponent";
 import StarRating from "./StarRating";
 import TagComponent from "./tagComponent";
 import ButtonComponent from "./buttonComponent";
+import TimeOfDay from "./timeOfDay";
 
 export default function ProductSlot({Product}: {Product: ProductInterface}) {
   
@@ -34,10 +35,13 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
          />
         </div>
         
-        <div className="min-h-[50px]">
-            <StarRating 
-              opinions={Product.rating} 
+        <div className="flex items-center justify-between min-h-[50px]">
+            <TimeOfDay 
+              timeOfDay={Product.timeOfDay} 
               />
+            <StarRating 
+                opinions={Product.rating} 
+            />
         </div>
         <ButtonComponent
           text="Zamów" 

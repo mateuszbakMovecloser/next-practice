@@ -11,4 +11,5 @@ export interface ProductInterface {
     grams: number;
     tags: string[];
     quantity: number;
+    timeOfDay: string[];
 }
