@@ -20,7 +20,7 @@ export default function Price({price, regularPrice, smallestPrice, grams}: Price
                 )}
             </div>
                 
-            <div className="text-[8px] text-[#7f848a]">
+            <div className="text-[10px] text-[#7f848a]">
                 {((price/grams)*100).toFixed(2)} zł / 100g
             </div>
             
