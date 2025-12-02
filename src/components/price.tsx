@@ -36,17 +36,14 @@ export default function Price({price, regularPrice, smallestPrice, grams}: Price
                 </div>
             )}
 
-            {hasDiscount ? (
+            {hasDiscount && (
                 <div className="text-[8px] text-[#7f848a]">
                     Najniższa cena w okresie 30 dni: <span className="line-through">{smallestPrice} zł</span>
                     <span className="text-red-500 font-semibold ml-1">
                         -{smallestPriceDiscountPercent}%
                     </span>
                 </div>
-            ) : (
-                <div className="text-[8px] text-[#7f848a]">
-                     Najniższa cena w okresie 30 dni: {smallestPrice} zł
-                </div>
+                
             )}
         </div>
     )
