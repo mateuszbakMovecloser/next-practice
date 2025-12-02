@@ -22,15 +22,6 @@ export async function getProductsByCategory(category: string): Promise<ProductIn
 }
 
 
-
-
-
-
-
-
-
-
-
 // export async function getProducts(id: string) {
 //     const res = await fetch(`https://api/products/${id}`);
 //     if(!res.ok) {

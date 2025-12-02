@@ -8,7 +8,7 @@ export default function Button({text, quantity}: ButtonComponentInterface) {
     if (isDisabled) {
         return (
             <button 
-                className="p-2 rounded-none w-full mt-auto bg-gray-400 text-gray-600 cursor-not-allowed"
+                className="product-card-btn product-card-btn-disabled"
                 disabled
             >
                 {buttonText}
@@ -20,9 +20,9 @@ export default function Button({text, quantity}: ButtonComponentInterface) {
         <Link 
             href="/order"
             onClick={(e) => e.stopPropagation()}
-            className="p-2 rounded-none w-full mt-auto bg-gray-900 text-white hover:bg-gray-800 block text-center cursor-pointer"
+            className="product-card-btn product-card-btn-primary"
         >
-            {buttonText}
+            <span>{buttonText}</span>
         </Link>
     );
 }

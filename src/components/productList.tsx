@@ -26,7 +26,7 @@ export default function ProductList({ products }: ProductListProps) {
           <div 
             key={product.id} 
             onClick={() => handleProductClick(product.id)}
-            className="cursor-pointer hover:shadow-2xl transition-all duration-200 ease-in-out relative hover:z-10 hover:scale-102 overflow-hidden"
+            className="product-card-wrapper"
           >
             <ProductSlot Product={product} />
           </div>

@@ -10,12 +10,8 @@ export default function Tag({tags}: {tags: string[]}) {
                 Promocja
             </div>}
             {nowosc && 
-            <div className="w-full border border-[#d4af37] text-[#d4af37] uppercase text-center leading-tight tag-item">
+            <div className="w-full border border-[#f2c07e] text-[#f2c07e] uppercase text-center leading-tight tag-item">
                 Nowość
-            </div>}
-            {beautyClub && 
-            <div className="w-full border border-[#a02916] text-[#a02916] uppercase text-center text-xs leading-tight tag-item">
-                Odkryj kod w Beauty Club*
             </div>}
         </div>
     );

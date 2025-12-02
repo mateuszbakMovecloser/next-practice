@@ -24,11 +24,17 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
             width={256}
             height={256}
             quality={75}
-            className="w-full h-48 rounded-md object-contain"
+            className="product-card-image"
           />
         </div>
         <hr className="border-gray-300 mb-3" />
-        <h3 className="text-black h-16 mb-20 font-weight-400">{Product.name} {Product.grams}g</h3>
+        
+        {/* Nazwa produktu - jak w oryginale */}
+        <div className="product-card-description">
+          <h3>
+            {Product.name} {Product.grams}g
+          </h3>
+        </div>
 
         <div className="h-[115px] md:h-[90px] md:my-[12px]">
           <PriceComponent
