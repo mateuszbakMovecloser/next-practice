@@ -18,14 +18,11 @@ export default async function Home() {
   }
   
   return (
-    <main className="w-full px-16 md:px-24 lg:px-32 xl:px-40">      
-      <div className="mx-auto" style={{ maxWidth: '1200px' }}>
-        <div className="mb-8 text-center">
-          <h1 className="text-2xl leading-7 my-[30px] font-bold text-black">         
-            BESTSELLERY - sprawdź, na czym polega ich wyjątkowość
-          </h1>
-        </div>
-        
+    <main className="px-16 md:px-24 lg:px-32 xl:px-40">
+      <div className="mx-auto max-w-[1200px]">
+        <h1 className="text-2xl leading-7 my-[30px] font-bold text-black text-center">
+          BESTSELLERY - sprawdź, na czym polega ich wyjątkowość
+        </h1>
         <ProductList products={products} />
       </div>
     </main>

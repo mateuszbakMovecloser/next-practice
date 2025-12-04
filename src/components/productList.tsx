@@ -16,7 +16,7 @@ export default function ProductList({ products }: ProductListProps) {
   };
 
   return (
-    <div className="grid gap-4 product-grid">
+    <div className="grid gap-5 product-grid">
       {products.length === 0 ? (
         <div className="text-center py-8 product-grid-empty">
           No products found

@@ -10,12 +10,11 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
   
   return (
     <div className="px-6 py-4 h-full flex flex-col">
-      {/* Sekcja tagów - dynamiczna wysokość */}
+    
       <div>
         <TagComponent tags={Product.tags} />
       </div>
 
-      {/* Środkowa część - flex-grow zajmie pozostałą przestrzeń */}
       <div className="flex-grow flex flex-col">
         <div className="mb-3">
           <Image
@@ -29,7 +28,6 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
         </div>
         <hr className="border-gray-300 mb-3" />
         
-        {/* Nazwa produktu - jak w oryginale */}
         <div className="product-card-description">
           <h3>
             {Product.name} {Product.grams}g
@@ -55,7 +53,7 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
         </div>
       </div>
 
-      {/* Guzik - zawsze na dole, mt-auto go "wypycha" */}
+
       <div className="mt-auto">
         <ButtonComponent
           text="Zamów" 

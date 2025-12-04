@@ -33,13 +33,13 @@ body {
   line-height: 1.6;
 }
 
-/* Product Card Price */
+
 .product-card-price {
   margin: 4px 0;
   text-align: left;
 }
 
-/* Product Grid */
+
 .product-grid {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
@@ -48,7 +48,6 @@ body {
   grid-column: 1 / -1;
 }
 
-/* Product Card Wrapper */
 .product-card-wrapper {
   cursor: pointer;
   position: relative;
@@ -62,12 +61,12 @@ body {
   transform: scale(1.02);
 }
 
-/* Tag padding */
+
 .tag-item {
   padding: 3px 17px;
 }
 
-/* Product Image */
+
 .product-card-image {
   width: 100%;
   min-height: 12rem;
@@ -84,7 +83,7 @@ body {
   }
 }
 
-/* Product Description (Nazwa produktu) */
+
 .product-card-description {
   height: 95px;
   margin: 0;
@@ -110,7 +109,7 @@ body {
   }
 }
 
-/* Button Base */
+
 .product-card-btn {
   padding: 0;
   border-radius: 0;
@@ -136,13 +135,13 @@ body {
   }
 }
 
-/* Button Primary (aktywny) */
+
 .product-card-btn-primary {
   background-color: #2b343d;
   color: #fff;
 }
 
-/* Efekt hover - kolor od lewej */
+
 .product-card-btn-primary::before {
   content: '';
   position: absolute;
@@ -164,7 +163,7 @@ body {
   z-index: 1;
 }
 
-/* Button Disabled */
+
 .product-card-btn-disabled {
   background-color: rgba(43, 52, 61, 0.1);
   border-color: rgba(43, 52, 61, 0);
