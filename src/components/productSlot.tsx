@@ -43,8 +43,7 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
           />
         </div>
         
-        <div className="flex items-center justify-between min-h-[50px]">
-          <TimeOfDay 
+        <div className="flex items-center justify-between min-h-[50px] mt-auto">          <TimeOfDay 
             timeOfDay={Product.timeOfDay} 
           />
           <StarRating 
