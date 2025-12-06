@@ -11,7 +11,7 @@ export default function Price({price, regularPrice, smallestPrice, grams}: Price
     
     return (
         <div className="space-y-0 text-gray-500 text-left relative z-[999] product-card-price">        
-            <div className="flex items-center text-sm md:text-lg font-medium">
+            <div className="flex items-center text-[18px] font-[500]">
                 {hasDiscount ? (
                     <span className="text-[#d9000c]">{price} zł</span>
                 ) : (

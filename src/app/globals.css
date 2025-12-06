@@ -41,7 +41,7 @@ body {
 
 
 .product-grid {
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .product-grid-empty {
@@ -69,9 +69,8 @@ body {
 
 .product-card-image {
   width: 100%;
-  min-height: 12rem;
-  max-height: 12rem;
-  object-fit: contain;
+  height: 13rem;
+  object-fit: cover;
   margin: 0 auto;
   transition: all 250ms;
   object-position: 50% 50%;

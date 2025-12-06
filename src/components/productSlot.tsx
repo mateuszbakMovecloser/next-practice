@@ -11,7 +11,7 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
   return (
     <div className="px-6 py-4 h-full flex flex-col">
     
-      <div>
+      <div className="min-h-[45px]">
         <TagComponent tags={Product.tags} />
       </div>
 
