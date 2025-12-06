@@ -78,7 +78,7 @@ body {
 
 @media (min-width: 768px) {
   .product-card-image {
-    max-height: 16rem;
+    height: 13rem;
   }
 }
 
