@@ -9,7 +9,7 @@ import TimeOfDay from "./timeOfDay";
 export default function ProductSlot({product}: {product: ProductInterface}) {
   
   return (
-    <div className="px-6 py-4 h-full flex flex-col">
+    <div className="px-4 sm:px-6 py-4 h-full flex flex-col">
     
       <div className="min-h-[45px]">
         <TagComponent tags={product.tags} />
@@ -34,7 +34,7 @@ export default function ProductSlot({product}: {product: ProductInterface}) {
           </h3>
         </div>
 
-        <div className="h-[115px] md:h-[90px] md:my-[12px]">
+        <div className="h-auto min-h-[115px] md:h-[90px] md:my-[12px]">
           <PriceComponent
             price={product.price}
             regularPrice={product.regularPrice}
@@ -43,7 +43,8 @@ export default function ProductSlot({product}: {product: ProductInterface}) {
           />
         </div>
         
-        <div className="flex items-center justify-between min-h-[50px] mb-3">          <TimeOfDay 
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0 min-h-[50px] mb-3">
+          <TimeOfDay 
             timeOfDay={product.timeOfDay} 
           />
           <StarRating 
@@ -51,7 +52,6 @@ export default function ProductSlot({product}: {product: ProductInterface}) {
           />
         </div>
       </div>
-
 
       <div className="mt-auto">
         <ButtonComponent

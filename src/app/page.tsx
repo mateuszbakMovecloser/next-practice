@@ -18,9 +18,9 @@ export default async function Home() {
   }
   
   return (
-    <main className="px-[10rem] ">
-      <h1 className="text-[30px] leading-7 my-[30px] font-medium text-black text-center w-full">
-      BESTSELLERY - sprawdź, na czym polega ich wyjątkowość
+    <main className="px-4 sm:px-8 md:px-16 lg:px-32 xl:px-[10rem]">
+      <h1 className="text-xl sm:text-2xl md:text-[28px] lg:text-[30px] leading-tight sm:leading-7 my-6 md:my-[30px] font-medium text-black text-center w-full">
+        BESTSELLERY - sprawdź, na czym polega ich wyjątkowość
       </h1>
       <div className="mx-auto max-w-[1200px]">
         <ProductList products={products} />
