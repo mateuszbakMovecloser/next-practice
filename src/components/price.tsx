@@ -42,7 +42,6 @@ export default function Price({price, regularPrice, smallestPrice, grams}: Price
                         -{smallestPriceDiscountPercent}%
                     </span>
                 </div>
-                
             )}
         </div>
     )

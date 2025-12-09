@@ -28,7 +28,7 @@ export default function ProductList({ products }: ProductListProps) {
             onClick={() => handleProductClick(product.id)}
             className="product-card-wrapper"
           >
-            <ProductSlot Product={product} />
+            <ProductSlot product={product} />
           </div>
         ))
       )}

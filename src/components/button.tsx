@@ -1,6 +1,7 @@
 import { ButtonComponentInterface } from "../interfaces/buttonComponent";
 import Link from "next/link";
 
+
 export default function Button({text, quantity}: ButtonComponentInterface) {
     const buttonText = quantity > 0 ? text : "brak na magazynie";
     const isDisabled = quantity <= 0;

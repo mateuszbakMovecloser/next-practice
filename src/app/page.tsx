@@ -19,12 +19,12 @@ export default async function Home() {
   
   return (
     <main className="px-[10rem] ">
-  <h1 className="text-[30px] leading-7 my-[30px] font-medium text-black text-center w-full">
+      <h1 className="text-[30px] leading-7 my-[30px] font-medium text-black text-center w-full">
       BESTSELLERY - sprawdź, na czym polega ich wyjątkowość
-  </h1>
-  <div className="mx-auto max-w-[1200px]">
-    <ProductList products={products} />
-  </div>
-</main>
+      </h1>
+      <div className="mx-auto max-w-[1200px]">
+        <ProductList products={products} />
+      </div>
+    </main>
   );
 }

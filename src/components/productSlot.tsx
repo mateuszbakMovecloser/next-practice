@@ -6,20 +6,20 @@ import TagComponent from "./tag";
 import ButtonComponent from "./button";
 import TimeOfDay from "./timeOfDay";
 
-export default function ProductSlot({Product}: {Product: ProductInterface}) {
+export default function ProductSlot({product}: {product: ProductInterface}) {
   
   return (
     <div className="px-6 py-4 h-full flex flex-col">
     
       <div className="min-h-[45px]">
-        <TagComponent tags={Product.tags} />
+        <TagComponent tags={product.tags} />
       </div>
 
       <div className="flex-grow flex flex-col">
         <div className="mb-3">
           <Image
-            src={Product.image}
-            alt={Product.name}
+            src={product.image}
+            alt={product.name}
             width={256}
             height={256}
             quality={75}
@@ -30,24 +30,24 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
         
         <div className="product-card-description">
           <h3>
-            {Product.name} {Product.grams}g
+            {product.name} {product.grams}g
           </h3>
         </div>
 
         <div className="h-[115px] md:h-[90px] md:my-[12px]">
           <PriceComponent
-            price={Product.price}
-            regularPrice={Product.regularPrice}
-            smallestPrice={Product.smallestPrice} 
-            grams={Product.grams}
+            price={product.price}
+            regularPrice={product.regularPrice}
+            smallestPrice={product.smallestPrice} 
+            grams={product.grams}
           />
         </div>
         
         <div className="flex items-center justify-between min-h-[50px] mb-3">          <TimeOfDay 
-            timeOfDay={Product.timeOfDay} 
+            timeOfDay={product.timeOfDay} 
           />
           <StarRating 
-            opinions={Product.rating} 
+            opinions={product.rating} 
           />
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function ProductSlot({Product}: {Product: ProductInterface}) {
       <div className="mt-auto">
         <ButtonComponent
           text="Zamów" 
-          quantity={Product.quantity} 
+          quantity={product.quantity} 
         />
       </div>
     </div>
